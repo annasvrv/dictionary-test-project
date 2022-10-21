@@ -1,0 +1,15 @@
+.Phonetics .sound {
+  padding: 0;
+  text-align: end;
+}
+.Phonetics a {
+  color: var(--font-color);
+  opacity: 0.9;
+  padding-left: 50px;
+}
+
+.Phonetics .sound-text {
+  padding: 0;
+  /* padding-top: 15px; */
+  letter-spacing: 2px;
+}

@@ -10,14 +10,21 @@ export default function Results(props) {
     return (
       <div className="Results">
         <section className="card mb-3 shadow-sm">
-          <div className="card-body">
-            {/* place pics results */}
+          <div className="card-body row">
+            <div className="col-4">
+              <h2>{props.resultData.word}</h2>
 
-            <h2>{props.resultData.word}</h2>
-            {/* phonetic place */}
-            <Phonetics />
-
-            <Photos pic={props.photoResult} />
+              {props.resultData.phonetics.map((phonetic, index) => {
+                return (
+                  <div key={index}>
+                    <Phonetics phone={phonetic} />
+                  </div>
+                );
+              })}
+            </div>
+            <div className="col-8">
+              <Photos pic={props.photoResult} />
+            </div>
           </div>
         </section>
 
