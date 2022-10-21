@@ -1,5 +1,36 @@
+import logo from "./styles/glasses1.png";
+import Dictionary from "./components/Dictionary";
 import "./styles/App.css";
 
 export default function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <div className="container">
+        <header className="app-hearder">
+          <h1>Dictionary</h1>
+          <div className="app-img">
+            <img src={logo} alt="glasses" className="rotateimg180" />
+          </div>
+        </header>
+        <main>
+          <Dictionary defaultKeyword="beautiful" />
+        </main>
+        <footer className="app-footer">
+          <a
+            href="https://github.com/annasvrv/dictionary-project"
+            title="GitHub code"
+          >
+            Open-source code
+          </a>{" "}
+          by{" "}
+          <a
+            href="https://www.linkedin.com/in/anna-svrv/"
+            title="LinkedIn profile"
+          >
+            AnnaS
+          </a>
+        </footer>
+      </div>
+    </div>
+  );
 }
