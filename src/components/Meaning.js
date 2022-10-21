@@ -2,6 +2,8 @@ import React from "react";
 import Synonyms from "./Synonyms";
 import Antonyms from "./Antonyms";
 
+import "../styles/Meaning.css";
+
 export default function Meaning(props) {
   return (
     <div className="Meaning">

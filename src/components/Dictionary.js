@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 
+import "../styles/Dictionary.css";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -67,7 +68,6 @@ export default function Dictionary(props) {
           </div>
         </form>
         <Results resultData={results} photoResult={photos} />
-        
       </div>
     );
   } else {

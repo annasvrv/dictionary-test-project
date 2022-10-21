@@ -3,6 +3,8 @@ import Phonetics from "./Phonetics";
 import Photos from "./Photos";
 import Meaning from "./Meaning";
 
+import "../styles/Results.css";
+
 export default function Results(props) {
   if (props.resultData) {
     return (

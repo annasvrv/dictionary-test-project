@@ -1,0 +1,16 @@
+.Dictionary .wordSearch {
+  border-radius: 50px;
+  border: 1px solid var(--font-color);
+  background-color: transparent;
+}
+
+.wordSearch::placeholder {
+  color: var(--font-color);
+  opacity: 0.5;
+}
+
+.Dictionary .searchBtn {
+  color: var(--font-color);
+  border: 1px solid var(--font-color);
+  border-radius: 15px;
+}
