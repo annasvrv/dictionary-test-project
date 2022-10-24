@@ -1,6 +1,7 @@
 .Dictionary .wordSearch {
   border-radius: 50px;
   border: 1px solid var(--font-color);
+  border-right: none;
   background-color: transparent;
 }
 
@@ -10,7 +11,9 @@
 }
 
 .Dictionary .searchBtn {
+  padding-right: 20px;
   color: var(--font-color);
   border: 1px solid var(--font-color);
-  border-radius: 15px;
+  border-left: none;
+  border-radius: 50px;
 }
