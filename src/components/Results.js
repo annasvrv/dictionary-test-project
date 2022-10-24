@@ -14,6 +14,7 @@ export default function Results(props) {
             <div className="col-4">
               <h2>{props.resultData.word}</h2>
 
+              {/*Looping through each phonetics: find audio & text */}
               {props.resultData.phonetics.map((phonetic, index) => {
                 return (
                   <div key={index}>
