@@ -14,13 +14,13 @@ export default function Phonetics(props) {
   } else {
     return (
       <div className="Phonetics">
-        <div className="row mb-3">
-          <div className="sound col-2">
+        <div className="row">
+          <div className="sound col-md">
             <button className="audioButton" onClick={start}>
               <i className="fa-solid fa-volume-low"></i>
             </button>
           </div>
-          <div className="sound-text col-10 ps-3">{props.phone.text}</div>
+          <div className="sound-text col-md">{props.phone.text}</div>
         </div>
       </div>
     );

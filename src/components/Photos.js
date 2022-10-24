@@ -9,7 +9,7 @@ export default function Photos(props) {
         <div className="row">
           {props.pic.map(function (photo, index) {
             return (
-              <div className="col-3">
+              <div className="col-sm-4 mt-2">
                 <a
                   href={photo.src.original}
                   key={index}
@@ -18,7 +18,8 @@ export default function Photos(props) {
                 >
                   <img
                     src={photo.src.tiny}
-                    alt=""
+                    alt={photo.alt}
+                    title={photo.alt}
                     className="img-fluid img-thumbnail"
                   />
                 </a>

@@ -11,7 +11,7 @@ export default function Results(props) {
       <div className="Results">
         <section className="card mb-3 shadow-sm">
           <div className="card-body row">
-            <div className="col-4">
+            <div className="col-md-4 text-center">
               <h2>{props.resultData.word}</h2>
 
               {/*Looping through each phonetics: find audio & text */}
@@ -23,7 +23,7 @@ export default function Results(props) {
                 );
               })}
             </div>
-            <div className="col-8">
+            <div className="col-md-8">
               <Photos pic={props.photoResult} />
             </div>
           </div>

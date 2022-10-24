@@ -36,7 +36,7 @@ export default function Dictionary(props) {
     //documentation: https://www.pexels.com/api/documentation/
     let pixelsApiKey =
       "563492ad6f91700001000001dc029d1b2f8c42bfa4238278227f178a";
-    let pixelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=12`;
+    let pixelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
     let headers = { Authorization: `Bearer ${pixelsApiKey}` };
 
     axios.get(pixelsApiUrl, { headers: headers }).then(handlePixcelsResponse);
@@ -51,20 +51,18 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <form onSubmit={handleSubmit} className="m-5">
-          
-            <div className="input-group">
-              <input
-                type="search"
-                placeholder="Search for a word..."
-                autoComplete="off"
-                className="wordSearch form-control"
-                onChange={handleKeywordChange}
-              />
-              <button className="searchBtn btn" type="submit">
-                <i className="fa-solid fa-magnifying-glass" title="Search"></i>
-              </button>
-            </div>
-            
+          <div className="input-group">
+            <input
+              type="search"
+              placeholder="Search for a word..."
+              autoComplete="off"
+              className="wordSearch form-control"
+              onChange={handleKeywordChange}
+            />
+            <button className="searchBtn btn" type="submit">
+              <i className="fa-solid fa-magnifying-glass" title="Search"></i>
+            </button>
+          </div>
         </form>
         <Results resultData={results} photoResult={photos} />
       </div>

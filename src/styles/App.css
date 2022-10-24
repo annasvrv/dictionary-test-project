@@ -43,6 +43,45 @@ h1 {
 }
 
 .App .app-footer a {
-  /* text-decoration: none; */
+  
   color: var(--font-color);
+}
+
+@media (max-width: 1050px) {
+  img {
+    margin-right: 40px;
+  }
+  .rotateimg180 {
+    width: 60px;
+  }
+  .sound-text {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  img {
+    margin-right: 40px;
+  }
+  .rotateimg180 {
+    width: 60px;
+  }
+  .sound-text {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 600px) {
+  img {
+    margin-right: 60px;
+  }
+  .rotateimg180 {
+    width: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .rotateimg180 {
+    display: none;
+  }
+
 }
