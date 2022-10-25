@@ -17,7 +17,7 @@ export default function App() {
         </main>
         <footer className="app-footer">
           <a
-            href="https://github.com/annasvrv/dictionary-project"
+            href="https://github.com/annasvrv/dictionary-test-project"
             title="GitHub code"
           >
             Open-source code
