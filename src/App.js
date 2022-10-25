@@ -19,6 +19,8 @@ export default function App() {
           <a
             href="https://github.com/annasvrv/dictionary-test-project"
             title="GitHub code"
+            target="_blank"
+            rel="noreferrer"
           >
             Open-source code
           </a>{" "}
@@ -26,6 +28,8 @@ export default function App() {
           <a
             href="https://www.linkedin.com/in/anna-svrv/"
             title="LinkedIn profile"
+            target="_blank"
+            rel="noreferrer"
           >
             AnnaS
           </a>
