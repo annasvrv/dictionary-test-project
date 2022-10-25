@@ -5,6 +5,8 @@ import "../styles/Phonetics.css";
 export default function Phonetics(props) {
   let audio = new Audio(props.phone.audio);
 
+  // let start = () => new Audio(props.phone.audio).play();
+
   const start = () => {
     audio.play();
   };
